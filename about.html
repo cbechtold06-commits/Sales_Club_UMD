@@ -32,17 +32,12 @@
                         "on-primary": "#ffffff",
                         "tertiary-fixed": "#e5e2e1",
                         "surface-container-lowest": "#ffffff",
-                        "primary": "#51000d",
+                        "primary": "#7A0019",
                         "surface-container": "#edeeef",
-                        "on-secondary-fixed-variant": "#594400",
-                        "tertiary-fixed-dim": "#c8c6c5",
-                        "primary-fixed": "#ffdad9",
-                        "surface-dim": "#d9dadb",
-                        "on-tertiary-fixed": "#1b1c1c",
                         "on-secondary-container": "#705600",
                         "secondary-container": "#fecb32",
                         "on-tertiary-container": "#a5a4a3",
-                        "primary-container": "#7a0019",
+                        "primary-container": "#7A0019",
                         "on-surface-variant": "#584141",
                         "primary-fixed-dim": "#ffb3b2",
                         "surface-container-low": "#f3f4f5",
@@ -97,12 +92,14 @@
     <header
         class="bg-white/70 dark:bg-zinc-950/70 backdrop-blur-xl shadow-sm shadow-zinc-200/50 dark:shadow-none fixed top-0 left-0 right-0 z-50 h-20 w-full">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
-            <div class="text-xl font-black tracking-tighter text-red-900 dark:text-red-500">UMD Sales Club</div>
-            <nav class="hidden md:flex items-center space-x-8 font-['Inter'] tracking-tight font-medium text-sm">
-                <a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-yellow-400 pb-1" href="#">Home</a>
-                <a class="text-zinc-600 dark:text-zinc-400 hover:text-red-900 transition-colors" href="#">About Us</a>
-                <a class="text-zinc-600 dark:text-zinc-400 hover:text-red-900 transition-colors" href="#">Events</a>
-                <a class="text-zinc-600 dark:text-zinc-400 hover:text-red-900 transition-colors" href="#">Partners</a>
+            <div class="text-xl font-black tracking-tighter text-primary dark:text-red-500">UMD Sales Club</div>
+            <nav
+                class="hidden md:flex items-center space-x-8 font-['Inter'] tracking-tight font-medium text-sm flex-1 justify-center">
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors" href="#">Home</a>
+                <a class="text-primary font-medium hover:opacity-80 transition-colors border-b-2 border-secondary-container"
+                    href="#">About Us</a>
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors" href="#">Events</a>
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors" href="#">Partners</a>
             </nav>
             <div class="flex items-center gap-4">
                 <button
@@ -212,7 +209,7 @@
                 </div>
             </div>
         </section>
-        <!-- Mission Section (Inserted from SCREEN_11) -->
+        <!-- Mission Section -->
         <section class="py-32 bg-surface-container-lowest relative overflow-hidden">
             <div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none"
                 style="background-image: radial-gradient(circle at center, #7A0019 0%, transparent 70%);"></div>
@@ -317,6 +314,62 @@
                                 Sarah is the creative force behind our signature events, ranging from regional sales
                                 competitions to exclusive networking nights. Her background ensures every event is an
                                 educational and high-impact experience.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Member 5: David Park -->
+                    <div
+                        class="flex flex-col md:flex-row gap-12 items-center bg-surface-container-lowest p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-outline-variant/10">
+                        <div
+                            class="w-full md:w-1/3 aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden rounded-2xl">
+                            <img alt="David Park" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHr9yO0ZatVIn9C2oM49eK9Zp0lP_v4fG292R8xW0unX1QdAtiqHW_WOnUYzUMmbGflLs1g92R7IGBDB0e8kbC5Z5N8_4whfmR7konF_U9RXnLvmTw_JyrH29P6OsqrJShMcF8_a1eZNkxqwBT0b7WU2lTHNnwj3X_qlCsUmbbkKL1sfFsR4cz0Bel8TF-dIX__NAMjgLw8_1ZFJ7QKn4VrkIV1pFn8LV5pzGJJ3qKxXiLT6fGb5etKgj5oyZU2prC55BXFMu_VV0" />
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-4">
+                            <span class="text-sm text-secondary font-bold uppercase tracking-widest">Treasurer</span>
+                            <h3 class="text-3xl font-black text-primary">David Park</h3>
+                            <p class="text-sm font-semibold text-primary/70">Accounting '25</p>
+                            <p class="text-lg text-on-surface-variant leading-relaxed">
+                                David manages the club's finances, budgeting for events and ensuring financial
+                                sustainability through corporate sponsorships and university grants.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Member 6: Maya Johnson -->
+                    <div
+                        class="flex flex-col md:flex-row-reverse gap-12 items-center bg-surface-container-lowest p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-outline-variant/10">
+                        <div
+                            class="w-full md:w-1/3 aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden rounded-2xl">
+                            <img alt="Maya Johnson" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_p-X_uB8_7_5_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0" />
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-4">
+                            <span class="text-sm text-secondary font-bold uppercase tracking-widest">Marketing
+                                Director</span>
+                            <h3 class="text-3xl font-black text-primary">Maya Johnson</h3>
+                            <p class="text-sm font-semibold text-primary/70">Marketing '26</p>
+                            <p class="text-lg text-on-surface-variant leading-relaxed">
+                                Maya leads our digital presence, managing social media channels and creating compelling
+                                content to engage both current members and prospective students.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Member 7: Liam O'Connor -->
+                    <div
+                        class="flex flex-col md:flex-row gap-12 items-center bg-surface-container-lowest p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-outline-variant/10">
+                        <div
+                            class="w-full md:w-1/3 aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden rounded-2xl">
+                            <img alt="Liam O'Connor" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_q-X_uC8_7_5_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0_1_2_3_4_5_6_7_8_9_0" />
+                        </div>
+                        <div class="w-full md:w-2/3 space-y-4">
+                            <span class="text-sm text-secondary font-bold uppercase tracking-widest">Outreach
+                                Coordinator</span>
+                            <h3 class="text-3xl font-black text-primary">Liam O'Connor</h3>
+                            <p class="text-sm font-semibold text-primary/70">Communication '25</p>
+                            <p class="text-lg text-on-surface-variant leading-relaxed">
+                                Liam focuses on expanding our network by building relationships with other student
+                                organizations and university departments to foster a collaborative sales community.
                             </p>
                         </div>
                     </div>
