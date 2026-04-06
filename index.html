@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#aaa492",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#faf9f8",
+                        "on-primary-fixed-variant": "#8d1324",
+                        "outline-variant": "#e0bfbe",
+                        "primary-container": "#7a0019",
+                        "surface-container-high": "#e9e8e7",
+                        "surface-container-low": "#f4f3f2",
+                        "on-error": "#ffffff",
+                        "secondary": "#785a00",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#ae2e39",
+                        "tertiary-fixed": "#eae2cf",
+                        "secondary-container": "#fec324",
+                        "surface-container": "#efeeed",
+                        "inverse-surface": "#2f3130",
+                        "background": "#faf9f8",
+                        "tertiary-container": "#3e3a2c",
+                        "tertiary-fixed-dim": "#cdc6b3",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4b4738",
+                        "inverse-primary": "#ffb3b2",
+                        "primary": "#51000d",
+                        "tertiary": "#282518",
+                        "on-secondary-container": "#6e5200",
+                        "on-background": "#1a1c1c",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "on-primary-fixed": "#410009",
+                        "secondary-fixed": "#ffdf9d",
+                        "on-tertiary-fixed": "#1e1c10",
+                        "on-secondary-fixed": "#251a00",
+                        "secondary-fixed-dim": "#f8be1c",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dadad9",
+                        "primary-fixed": "#ffdad9",
+                        "primary-fixed-dim": "#ffb3b2",
+                        "surface": "#faf9f8",
+                        "on-primary-container": "#ff7b7f",
+                        "outline": "#8c7070",
+                        "surface-container-highest": "#e3e2e1",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#584141",
+                        "inverse-on-surface": "#f1f0ef",
+                        "surface-variant": "#e3e2e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen">
+    <!-- TopAppBar / Header (Retained from SCREEN_11) -->
+    <header
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)] flex justify-between items-center px-6 lg:px-12 h-16">
+        <div class="flex items-center gap-8">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-red-900 dark:text-red-500 lg:hidden"
+                    data-icon="menu">menu</span>
+                <h1 class="text-xl font-extrabold tracking-tighter text-red-900 dark:text-red-500">UMD SALES</h1>
+            </div>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a class="text-sm font-semibold text-primary hover:text-red-700 transition-colors" href="#">Home</a>
+                <a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Who We Are</a>
+                <a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Events</a>
+                <a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">Partners</a>
+                <a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+                    href="#">About</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-4">
+            <button
+                class="hidden lg:block bg-primary text-white text-xs font-bold px-5 py-2 rounded-full hover:bg-red-800 transition-all">Join
+                Club</button>
+            <span class="material-symbols-outlined text-red-900 dark:text-red-500"
+                data-icon="account_circle">account_circle</span>
+        </div>
+    </header>
+    <main class="pt-16">
+        <!-- Hero Section (Retained from SCREEN_11) -->
+        <section class="relative min-h-[85vh] flex flex-col justify-center px-6 lg:px-24 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img alt="UMD Campus Architecture" class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoRkLmzxpic1dufnEK_E3ZBsh1zIO3GC76E1Lk1ROqs4VT1yiXH-fGL_mX_IqSyTyJKAqaBTz_Bupukdup7iw_qngIg3-olRcu4QQNlnf7LdHcOHUOTLlj5bELpzJWa09toEwa3QOClL_S7-Z12ohtrosVxuMs6aLdVvZyRhr4qXRW0jZC9F8-XuAya1IxKNxhKdZ-yi_luHIH7JTJi5NcuQoTWzVrYeZM-MVDtWo1BpKthTiQJ97NAwaYz-QWSB-aJ9aMCjNf11w" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent hidden lg:block">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent lg:hidden">
+                </div>
+            </div>
+            <div class="relative z-10 max-w-4xl space-y-8">
+                <div class="space-y-4">
+                    <p class="text-secondary-fixed font-bold tracking-[0.3em] text-xs lg:text-sm uppercase">Official
+                        Student Organization</p>
+                    <h2 class="text-4xl lg:text-7xl font-extrabold text-on-primary leading-tight tracking-tight">Your
+                        Journey to Professional Sales Excellence Starts Here</h2>
+                    <p class="text-on-primary/80 text-lg lg:text-xl max-w-2xl leading-relaxed hidden lg:block">The
+                        University of Minnesota Duluth Sales Club bridges the gap between academic theory and real-world
+                        corporate success through elite training and industry connections.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button
+                        class="bg-secondary-container text-on-secondary-container font-bold py-4 px-10 rounded-full text-center shadow-2xl hover:scale-105 active:scale-95 transition-all text-lg">
+                        Join on Bulldog Connect
+                    </button>
+                    <button
+                        class="bg-white/10 backdrop-blur-md text-white border border-white/20 font-semibold py-4 px-10 rounded-full text-center hover:bg-white/20 active:scale-95 transition-all text-lg">
+                        Explore Programs
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Mentorship & Events (Retained from SCREEN_11) -->
+        <div class="lg:grid lg:grid-cols-2">
+            <!-- Mentorship Program -->
+            <section class="py-24 px-6 lg:px-24 bg-surface-container-low flex flex-col justify-center">
+                <div class="max-w-xl">
+                    <p class="text-primary font-bold text-sm tracking-widest uppercase mb-4">The Edge</p>
+                    <h3 class="text-4xl lg:text-5xl font-bold text-primary tracking-tighter leading-tight mb-8">
+                        Mentorship<br />Program</h3>
+                    <div class="relative">
+                        <div class="bg-surface-container-lowest p-8 lg:p-10 rounded-2xl shadow-xl z-10 relative">
+                            <p class="text-on-surface-variant leading-relaxed text-lg mb-8">Connect with industry
+                                veterans and LSBE alumni who have navigated the professional sales landscape. Our
+                                structured mentorship program pairs you for success, providing invaluable insights into
+                                career paths, networking strategies, and negotiation tactics.</p>
+                            <a class="inline-flex items-center gap-3 text-primary font-bold text-lg group" href="#">
+                                Learn more
+                                <span
+                                    class="material-symbols-outlined text-xl transition-transform group-hover:translate-x-2"
+                                    data-icon="arrow_forward">arrow_forward</span>
+                            </a>
+                        </div>
+                        <div class="absolute -top-10 -right-10 w-48 h-48 bg-secondary-fixed/20 rounded-full blur-3xl">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Upcoming Events -->
+            <section
+                class="py-24 px-6 lg:px-24 bg-surface flex flex-col justify-center border-l border-surface-variant/30">
+                <div class="max-w-xl">
+                    <h3 class="text-3xl lg:text-4xl font-bold text-primary mb-12 tracking-tight">Sales Pipeline Events
+                    </h3>
+                    <div class="relative space-y-12">
+                        <!-- Pipeline Track -->
+                        <div class="absolute left-[11px] top-2 bottom-2 w-[2px] bg-surface-variant/50"></div>
+                        <!-- Event Item 1 -->
+                        <div class="relative flex gap-8 group">
+                            <div
+                                class="z-10 w-6 h-6 rounded-full bg-primary flex items-center justify-center border-4 border-surface group-hover:scale-110 transition-transform">
+                                <div class="w-1.5 h-1.5 rounded-full bg-white"></div>
+                            </div>
+                            <div class="flex-1 -mt-1">
+                                <p class="text-xs font-bold text-secondary uppercase tracking-wider">Oct 24 • 5:00 PM
+                                </p>
+                                <h4
+                                    class="font-bold text-xl text-on-surface group-hover:text-primary transition-colors">
+                                    Fall Sales Symposium</h4>
+                                <p class="text-sm text-on-surface-variant mt-1 italic">Labovitz School of Business &amp;
+                                    Economics</p>
+                            </div>
+                        </div>
+                        <!-- Event Item 2 -->
+                        <div class="relative flex gap-8 group">
+                            <div
+                                class="z-10 w-6 h-6 rounded-full bg-primary flex items-center justify-center border-4 border-surface group-hover:scale-110 transition-transform">
+                                <div class="w-1.5 h-1.5 rounded-full bg-white"></div>
+                            </div>
+                            <div class="flex-1 -mt-1">
+                                <p class="text-xs font-bold text-secondary uppercase tracking-wider">Nov 12 • 4:30 PM
+                                </p>
+                                <h4
+                                    class="font-bold text-xl text-on-surface group-hover:text-primary transition-colors">
+                                    Corporate Networking Night</h4>
+                                <p class="text-sm text-on-surface-variant mt-1 italic">UMD Ballroom B</p>
+                            </div>
+                        </div>
+                        <!-- Event Item 3 -->
+                        <div class="relative flex gap-8 group">
+                            <div
+                                class="z-10 w-6 h-6 rounded-full bg-primary flex items-center justify-center border-4 border-surface group-hover:scale-110 transition-transform">
+                                <div class="w-1.5 h-1.5 rounded-full bg-white"></div>
+                            </div>
+                            <div class="flex-1 -mt-1">
+                                <p class="text-xs font-bold text-secondary uppercase tracking-wider">Dec 01 • 10:00 AM
+                                </p>
+                                <h4
+                                    class="font-bold text-xl text-on-surface group-hover:text-primary transition-colors">
+                                    Sales Summit 2024</h4>
+                                <a class="text-sm text-primary font-bold mt-2 inline-block border-b-2 border-primary/20 hover:border-primary transition-all"
+                                    href="#">Link to Sales Summit →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- The Executive Vanguard (Modern Editorial Layout from SCREEN_9) -->
+        <section class="bg-surface-container-low py-32">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="mb-20 text-center">
+                    <span
+                        class="text-secondary font-black tracking-[0.2em] uppercase text-xs mb-4 block">Leadership</span>
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight text-primary">The Executive Vanguard</h2>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+                    <!-- Board Member -->
+                    <div class="group">
+                        <div
+                            class="aspect-[3/4] rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            <img alt="Alex Rivera"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEKQeyQr8jGqeu4hZ1ZkgAp3kenZMqlsjHboQskOBhdK2StSoF1W_ZxvtNyAdAt6zQa3O3z9dgPXPtJiAcr9U6cxNm9ZattYdYEcdQiVOfHqsIviDb6k72gp8ANU1EzlZyCH7M5NTHOjmHUzabmRsufsD0vuxLtDPG1XTzsM0BdKk0J5epE1mGdQK-dbX-V3_uwk8u3_Kz-HWA1s97BG8e3sRrt_v5YX7c1xUI2GWyyreN7hRl9s3I6talYJ44oBGM0u09X7-52F8" />
+                        </div>
+                        <h4 class="text-xl font-bold text-on-surface">Alex Rivera</h4>
+                        <p class="text-secondary font-medium text-sm tracking-wide mb-2 uppercase">President</p>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Tech Sales Enthusiast &amp; Strategic
+                            Partnerships Lead.</p>
+                    </div>
+                    <div class="group">
+                        <div
+                            class="aspect-[3/4] rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            <img alt="Maya Chen"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeDKsoqxDX0KjtZAtU6GuAGbmBpKyBD9ySAl55RBFJrLcUbegtAaTKG8_rMBh61lBK_oYN5_WeQzTYBx7oViVR9DULrhZcnnt8Xfvd5rCHM6xKY2YMGDyjNaitqFUhVUIjaGhJY5ACCQqUJsH0AGqmsF_NXFDQZx9t186gfMPjzTDzweUBaouNxA3akV2mb6oehBTmnToQWhCydea2fgF8fKoI1AfwISKvTV0phn5wKGdLgqvsbYvmnMcyEWmo4d4cDo3J8JV_0oM" />
+                        </div>
+                        <h4 class="text-xl font-bold text-on-surface">Maya Chen</h4>
+                        <p class="text-secondary font-medium text-sm tracking-wide mb-2 uppercase">VP of Operations</p>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">SaaS Specialist &amp; Digital
+                            Strategy Architect.</p>
+                    </div>
+                    <div class="group">
+                        <div
+                            class="aspect-[3/4] rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            <img alt="Marcus Thorne"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9ZLeWR43pYxjUdMg5bwx9ZTGiKHdl7YK9ATD6FgNk1D3EDUttdU_XmaRICgu-Vx_0lV4kKlwKgUbWYCtjYwgiVv7ERj8CcVMl2VBndAlowS5xueKlhSh4V5ZbESrM1-4p1aBea2_LReb-wLYCffOrZ-3HOp-D5Gq3Ip9wTAoPtk0Np2q-sjX5QMIl18GeeNsDyEPc6Fo_XPuVUxTbYqC7kC8vf_cbrw-jZ8lVQavsWG4QSrjGZvDFzOdooyMxNEt2QJ_QzULu4bM" />
+                        </div>
+                        <h4 class="text-xl font-bold text-on-surface">Marcus Thorne</h4>
+                        <p class="text-secondary font-medium text-sm tracking-wide mb-2 uppercase">Events Director</p>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Negotiation Coach &amp; Pipeline
+                            Management Expert.</p>
+                    </div>
+                    <div class="group">
+                        <div
+                            class="aspect-[3/4] rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            <img alt="Sarah Jenkins"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvsQeeaYWBel33H46bcMu43aYNsFk13BLgJSvtrkLo0SeSjLQR3Rkdy1wtX2hkpJKyLKGWp_DiCq4-wTjtQt-YuMBq8C4k-pXyDD49mXAE3MP52avo1oG7EUkrDMn_n_8IW4Y-XvmS7aWDaC-ukN9OMuOkinnjgoQdWGSZYO-BEqAMhluHPISpStMaLfX-DkSUF37g3nNC6Ce943d5sQdrc3bjQYD49GDTELQLSqZAKALR-Ep-AbGOiUfuH9uT2G2Fn0eYzzNn0Tc" />
+                        </div>
+                        <h4 class="text-xl font-bold text-on-surface">Sarah Jenkins</h4>
+                        <p class="text-secondary font-medium text-sm tracking-wide mb-2 uppercase">Marketing Lead</p>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Content Strategist &amp; Personal
+                            Brand Consultant.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Empowered by Industry Leaders (from SCREEN_9) -->
+        <section class="py-24 max-w-7xl mx-auto px-8">
+            <div
+                class="bg-white rounded-xl p-16 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.05)] text-center border border-surface-variant/30">
+                <h3 class="text-on-surface-variant/50 font-bold tracking-[0.3em] uppercase text-xs mb-12">Empowered by
+                    Industry Leaders</h3>
+                <div
+                    class="flex flex-wrap justify-center items-center gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <div class="text-2xl font-black text-on-surface tracking-tighter">TECHFLOW</div>
+                    <div class="text-2xl font-black text-on-surface tracking-tighter">SALESFORCE</div>
+                    <div class="text-2xl font-black text-on-surface tracking-tighter">ORACLE</div>
+                    <div class="text-2xl font-black text-on-surface tracking-tighter">HUBSPOT</div>
+                    <div class="text-2xl font-black text-on-surface tracking-tighter">LINKEDIN</div>
+                </div>
+            </div>
+        </section>
+        <!-- Final CTA (Hybrid refinement) -->
+        <section class="py-32 px-8 max-w-7xl mx-auto">
+            <div class="bg-primary relative rounded-2xl overflow-hidden p-12 md:p-24 text-center">
+                <div
+                    class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+                </div>
+                <div class="relative z-10 max-w-2xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-black text-white mb-8 leading-tight">Ready to master the art
+                        <br />of the digital close?</h2>
+                    <p class="text-primary-fixed/80 text-lg mb-12">Join the UMD Sales Club today and gain exclusive
+                        access to corporate recruiters, professional coaching, and elite competition pathways.</p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <button
+                            class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl">
+                            Join on Bulldog Connect
+                        </button>
+                        <button
+                            class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-xl hover:bg-white/20 transition-all">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Modern Dark Footer (from SCREEN_9) -->
+    <footer class="bg-primary text-secondary-fixed w-full">
+        <div class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+            <div class="flex flex-col items-center md:items-start gap-4">
+                <div class="font-black text-white text-3xl tracking-tighter">UMD SALES</div>
+                <p class="text-white/60 text-sm max-w-xs text-center md:text-left">
+                    © 2024 UMD Sales Club. The Digital Forward Vanguard. Proudly representing the University of
+                    Minnesota Duluth.
+                </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold tracking-tight">
+                <a class="text-white/80 hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+                <a class="text-white/80 hover:text-secondary-fixed transition-colors" href="#">Contact Us</a>
+                <a class="text-white/80 hover:text-secondary-fixed transition-colors" href="#">LinkedIn</a>
+                <a class="text-white/80 hover:text-secondary-fixed transition-colors" href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <!-- BottomNavBar (Visible only on Mobile - Retained for consistency) -->
+    <nav
+        class="fixed bottom-0 left-0 w-full z-50 flex lg:hidden justify-around items-center px-4 pb-4 pt-2 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md shadow-[0_-10px_30px_rgba(0,0,0,0.05)] rounded-t-2xl">
+        <a class="flex flex-col items-center justify-center bg-yellow-400/20 text-red-900 dark:text-yellow-500 rounded-xl px-4 py-2"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="home">home</span>
+            <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
+            <span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+            <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Events</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
+            <span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+            <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Partners</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
+            <span class="material-symbols-outlined" data-icon="info">info</span>
+            <span class="text-[10px] font-bold uppercase tracking-widest mt-1">About</span>
+        </a>
+    </nav>
+</body>
+
+</html>
