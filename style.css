@@ -1,0 +1,148 @@
+:root {
+    --umd-maroon: #941020;
+    --umd-gold: #FFCC33;
+    --dark-grey: #333333;
+    --light-grey: #f4f4f4;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-grey);
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Navigation */
+.navbar {
+    background: var(--umd-maroon);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 4px solid var(--umd-gold);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.logo span {
+    color: var(--umd-gold);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--umd-gold);
+}
+
+.nav-btn {
+    background: var(--umd-gold);
+    color: var(--umd-maroon) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--umd-gold);
+    color: var(--umd-maroon);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* Sales Tip Section */
+.tip-section {
+    background: var(--light-grey);
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#sales-tip {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--umd-maroon);
+    font-weight: 500;
+}
+
+/* Calendar Placeholder */
+.calendar-placeholder {
+    background: #eee;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+}
+
+.main-footer {
+    background: var(--dark-grey);
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
