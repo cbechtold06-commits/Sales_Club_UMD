@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#fec324",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#ffdad9",
+                        "surface-tint": "#ae2e39",
+                        "primary-fixed-dim": "#ffb3b2",
+                        "outline-variant": "#e0bfbe",
+                        "surface-container-low": "#f4f3f2",
+                        "on-tertiary-container": "#aaa492",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "error": "#ba1a1a",
+                        "primary": "#51000d",
+                        "primary-container": "#7a0019",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#3e3a2c",
+                        "background": "#faf9f8",
+                        "on-surface-variant": "#584141",
+                        "on-primary-fixed": "#410009",
+                        "surface-variant": "#e3e2e1",
+                        "on-primary-fixed-variant": "#8d1324",
+                        "secondary": "#785a00",
+                        "on-tertiary-fixed": "#1e1c10",
+                        "on-background": "#1a1c1c",
+                        "error-container": "#ffdad6",
+                        "surface": "#faf9f8",
+                        "inverse-primary": "#ffb3b2",
+                        "surface-bright": "#faf9f8",
+                        "on-secondary-fixed": "#251a00",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#eae2cf",
+                        "tertiary": "#282518",
+                        "tertiary-fixed-dim": "#cdc6b3",
+                        "surface-container-highest": "#e3e2e1",
+                        "on-tertiary-fixed-variant": "#4b4738",
+                        "on-surface": "#1a1c1c",
+                        "inverse-on-surface": "#f1f0ef",
+                        "secondary-fixed": "#ffdf9d",
+                        "on-secondary-container": "#6e5200",
+                        "surface-dim": "#dadad9",
+                        "inverse-surface": "#2f3130",
+                        "outline": "#8c7070",
+                        "surface-container-high": "#e9e8e7",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#f8be1c",
+                        "on-primary-container": "#ff7b7f",
+                        "surface-container": "#efeeed"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .text-glow {
+            text-shadow: 0 0 20px rgba(254, 195, 36, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body antialiased">
+    <!-- TopNavBar (Shared Component) -->
+    <header
+        class="w-full sticky top-0 z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+        <nav
+            class="flex items-center justify-between px-8 py-4 max-w-7xl mx-auto w-full font-['Plus_Jakarta_Sans'] tracking-tight">
+            <div class="text-xl font-bold tracking-tighter text-red-950 dark:text-red-500">UMD SALES CLUB</div>
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors"
+                    href="#">Home</a>
+                <a class="text-red-900 dark:text-yellow-500 font-bold border-b-2 border-yellow-500 pb-1" href="#">Who We
+                    Are</a>
+                <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors"
+                    href="#">Events</a>
+                <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors"
+                    href="#">Partners</a>
+                <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors"
+                    href="#">About</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold scale-95 active:opacity-80 transition-transform hover:bg-primary-container">
+                Join Club
+            </button>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section: Editorial Asymmetry -->
+        <section class="relative overflow-hidden pt-20 pb-32 px-8">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 z-10">
+                    <span
+                        class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary uppercase bg-secondary-fixed/30 rounded-full">Executive
+                        Leadership</span>
+                    <h1
+                        class="font-headline text-5xl md:text-7xl font-extrabold text-primary leading-none tracking-tighter mb-8">
+                        The Leaders Behind <br /> <span class="text-secondary">the Club</span>
+                    </h1>
+                    <p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        Driven by a relentless commitment to student professional growth, our executive board bridge the
+                        gap between academic theory and real-world sales excellence.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="aspect-[4/5] bg-surface-container rounded-2xl overflow-hidden relative group">
+                        <img alt="Executive President"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            data-alt="confident young professional in a sharp navy blazer standing in a modern glass-walled office building with warm natural light"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDomZxUna_EkWVRukaIGt2I_YcMQE-ofDk-jeGLnJ5MZbK5W4Hl_7df_gqQT0init5APP8hXaZJyqYJsJnuDIolxwdnPvv1SUXYuw1XmuAOsM7s_EjS8AU7NjyZxjY217Ps3moQPxhzGPls4fhl3pQ3CwDTSoGP-SJ3QUchRygb5gO_NcYI3xtkNHGLZFi52l3qhgC4GBpbkMgpdLtqJ_wPjKBYlfoWA6g_ZLAHGagZbRcPB9UIKm24H6JM_zg55aT32ttYkH7u5sU" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+                            <div>
+                                <h3 class="text-white font-headline font-bold text-2xl">Marcus Thorne</h3>
+                                <p class="text-secondary-fixed font-medium">Club President</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Gold Accent -->
+                    <div class="absolute -top-6 -right-6 w-32 h-32 border-t-4 border-r-4 border-secondary opacity-30">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Leadership Grid -->
+        <section class="bg-surface-container-low py-24 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                    <div class="max-w-xl">
+                        <h2 class="font-headline text-4xl font-bold text-primary mb-4">Board of Directors</h2>
+                        <p class="text-on-surface-variant">The architects of our professional ecosystem, dedicated to
+                            fostering high-performance sales culture within UMD.</p>
+                    </div>
+                    <div class="h-px flex-grow bg-outline-variant/30 hidden md:block mx-12 mb-4"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Leader Card 1 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:bg-surface-container-highest">
+                        <div class="w-full aspect-square mb-8 overflow-hidden rounded-lg bg-surface-variant">
+                            <img alt="Sarah Jenkins" class="w-full h-full object-cover"
+                                data-alt="professional woman with a warm smile wearing a white business suit in a bright corporate setting with soft bokeh"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_P-s105OqxWsWQFD8tyG2hS28XF5pFsE3_vWJWWSTA-I-zM-L7LFphNEOJdZPr_auUdpL7wxr-VU9000ZF5RXssbBBepAnY8aYWj-NpWO3b_ZhaKHZ3YJ-62UclDl79EJnW_EA7jws6ltimN2tmTKGFpAXrXHpvtjXbfFuZKhjsaF5EweNXaRBRxANPFzU5bVCoxHnafRVF2cGkYxqaNCAMxhl-eaWzHwgSjjf2aDGQ4tSI0VwprkdZD73pVykdqyNDcJmxDBRKY" />
+                        </div>
+                        <span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">VP of
+                            Operations</span>
+                        <h4 class="font-headline text-2xl font-bold text-primary mb-3">Sarah Jenkins</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            Sarah oversees club logistics and internal communications, ensuring every event mirrors the
+                            precision of a Fortune 500 sales kickoff.
+                        </p>
+                    </div>
+                    <!-- Leader Card 2 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:bg-surface-container-highest">
+                        <div class="w-full aspect-square mb-8 overflow-hidden rounded-lg bg-surface-variant">
+                            <img alt="David Chen" class="w-full h-full object-cover"
+                                data-alt="ambitious young man in business casual attire looking thoughtful in a creative studio environment with artistic lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRVbcojQe8NTi1JmaVGp-roRWpPNe7UUTjM0QtfT8Xtmah2ImAYzcnva-aAMkhAKL3NWNSgVOKBFZm6PeslEtzyBcPpBHoCADbQbSsjRuIngs8EcV8D429gyf0hzlfK0XnOKnKd0Z_6X0qnqAVLNoKv1qnDj0Qlh932n77C0R1x5ivFhioSRW8QK5_9_vxufIjPtODoYsdzA0okXDMnWsBnMwmghxC0q5ww76YAyqrhKFxqFYzcAPdw6CldB6eZ-cPnL-Wic-Klys" />
+                        </div>
+                        <span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">Director of
+                            Corporate Partnerships</span>
+                        <h4 class="font-headline text-2xl font-bold text-primary mb-3">David Chen</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            David manages relationships with over 20 corporate partners, creating direct pipelines for
+                            members into internships and careers.
+                        </p>
+                    </div>
+                    <!-- Leader Card 3 -->
+                    <div
+                        class="group bg-surface-container-lowest p-8 rounded-xl transition-all duration-300 hover:-translate-y-2 hover:bg-surface-container-highest">
+                        <div class="w-full aspect-square mb-8 overflow-hidden rounded-lg bg-surface-variant">
+                            <img alt="Elena Rodriguez" class="w-full h-full object-cover"
+                                data-alt="young executive woman standing confidently against a blurred library background with warm indoor lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCttYfA2uHqLAsTQAvCDYNDBpeg5ivl2ysxRN1Tb-MvUtnxAOmzr5ZgEiHdkth65dgERlTrCsrq5Fp2C_hZ7Mko3c_pr8ATCVmnoa1EzVCFz29TNJlW_X91SlSf4mfkl8Qcs5-Zogpcc7OSObpf5FdN-cWuHMaBvaC2OCM9IojUFtq2PRf7Ck84tmn0ugarBU-hIdwlLeqF-IA1wVk0cvmsLiZ-In-sVjltabcBqO8yNBB3_uaoGSWyZupPI7Pum1ZtCMGIDnIEHdY" />
+                        </div>
+                        <span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">Head of
+                            Recruitment</span>
+                        <h4 class="font-headline text-2xl font-bold text-primary mb-3">Elena Rodriguez</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">
+                            Elena leads our talent acquisition strategy, identifying high-potential students across
+                            campus to join the sales elite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mission Statement: The Tonal Shift -->
+        <section class="py-24 px-8 bg-primary relative overflow-hidden">
+            <!-- Decorative Grain/Texture Overlay Simulation -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none"
+                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;">
+            </div>
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <span class="material-symbols-outlined text-secondary-container text-5xl mb-8" data-icon="handshake"
+                    style="font-variation-settings: 'FILL' 0;">handshake</span>
+                <h2 class="font-headline text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">Our Unwavering
+                    Commitment</h2>
+                <p class="font-body text-xl text-primary-fixed leading-relaxed">
+                    "At the UMD Sales Club, we believe that sales is not just a job—it's a critical leadership skill.
+                    Our mission is to empower every member with the psychological insight, technical proficiency, and
+                    ethical framework required to become a collegiate executive."
+                </p>
+                <div class="mt-12 flex justify-center items-center space-x-6">
+                    <div class="w-12 h-[2px] bg-secondary"></div>
+                    <span class="text-secondary font-bold tracking-widest uppercase text-sm">The Executive Board</span>
+                    <div class="w-12 h-[2px] bg-secondary"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Core Values: Bento Grid -->
+        <section class="py-24 px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
+                    <div
+                        class="md:col-span-2 md:row-span-2 bg-surface-container rounded-2xl p-10 flex flex-col justify-end">
+                        <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                            data-icon="trending_up">trending_up</span>
+                        <h3 class="font-headline text-3xl font-bold text-primary mb-4">Professional Growth</h3>
+                        <p class="text-on-surface-variant">We prioritize high-impact workshops and competition prep that
+                            push students beyond their comfort zones.</p>
+                    </div>
+                    <div class="md:col-span-2 bg-secondary-fixed/20 rounded-2xl p-10 flex flex-col justify-center">
+                        <div class="flex items-center gap-6">
+                            <span class="material-symbols-outlined text-secondary text-4xl"
+                                data-icon="groups">groups</span>
+                            <div>
+                                <h3 class="font-headline text-xl font-bold text-primary">Peer Mentorship</h3>
+                                <p class="text-on-surface-variant text-sm">Upperclassmen guiding freshmen through the
+                                    professional pipeline.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="md:col-span-1 bg-surface-container-high rounded-2xl p-8 flex flex-col items-center text-center justify-center">
+                        <span class="material-symbols-outlined text-primary mb-4" data-icon="verified">verified</span>
+                        <span class="font-bold text-primary">Ethical Selling</span>
+                    </div>
+                    <div
+                        class="md:col-span-1 bg-primary-container rounded-2xl p-8 flex flex-col items-center text-center justify-center">
+                        <span class="material-symbols-outlined text-on-primary-container mb-4"
+                            data-icon="school">school</span>
+                        <span class="font-bold text-white">Academic Merit</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer (Shared Component) -->
+    <footer class="w-full mt-20 bg-stone-100 dark:bg-stone-950 font-['Inter'] text-sm">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 max-w-7xl mx-auto">
+            <div class="font-['Plus_Jakarta_Sans'] font-bold text-red-950 dark:text-red-600 mb-6 md:mb-0">
+                UMD SALES CLUB
+            </div>
+            <div class="flex space-x-8 mb-6 md:mb-0">
+                <a class="text-stone-500 hover:text-red-900 transition-colors" href="#">Privacy Policy</a>
+                <a class="text-stone-500 hover:text-red-900 transition-colors" href="#">Terms of Service</a>
+                <a class="text-stone-500 hover:text-red-900 transition-colors" href="#">Alumni</a>
+                <a class="text-stone-500 hover:text-red-900 transition-colors" href="#">Careers</a>
+            </div>
+            <div class="text-stone-500">
+                © 2024 UMD Sales Club. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
