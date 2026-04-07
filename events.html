@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <title>Events &amp; Calendar | UMD Sales Club</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "secondary-container": "#fec324",
-                        "on-error": "#ffffff",
-                        "on-secondary": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "primary-fixed": "#ffdad9",
-                        "surface-tint": "#ae2e39",
-                        "primary-fixed-dim": "#ffb3b2",
-                        "outline-variant": "#e0bfbe",
-                        "surface-container-low": "#f4f3f2",
-                        "on-tertiary-container": "#aaa492",
-                        "on-secondary-fixed-variant": "#5b4300",
-                        "error": "#ba1a1a",
-                        "primary": "#51000d",
-                        "primary-container": "#7a0019",
-                        "on-primary": "#ffffff",
-                        "tertiary-container": "#3e3a2c",
-                        "background": "#faf9f8",
-                        "on-surface-variant": "#584141",
-                        "on-primary-fixed": "#410009",
-                        "surface-variant": "#e3e2e1",
-                        "on-primary-fixed-variant": "#8d1324",
-                        "secondary": "#785a00",
-                        "on-tertiary-fixed": "#1e1c10",
-                        "on-background": "#1a1c1c",
-                        "error-container": "#ffdad6",
-                        "surface": "#faf9f8",
-                        "inverse-primary": "#ffb3b2",
-                        "surface-bright": "#faf9f8",
-                        "on-secondary-fixed": "#251a00",
-                        "on-error-container": "#93000a",
-                        "tertiary-fixed": "#eae2cf",
-                        "tertiary": "#282518",
-                        "tertiary-fixed-dim": "#cdc6b3",
-                        "surface-container-highest": "#e3e2e1",
-                        "on-tertiary-fixed-variant": "#4b4738",
-                        "on-surface": "#1a1c1c",
-                        "inverse-on-surface": "#f1f0ef",
-                        "secondary-fixed": "#ffdf9d",
-                        "on-secondary-container": "#6e5200",
-                        "surface-dim": "#dadad9",
-                        "inverse-surface": "#2f3130",
-                        "outline": "#8c7070",
-                        "surface-container-high": "#e9e8e7",
                         "on-tertiary": "#ffffff",
-                        "secondary-fixed-dim": "#f8be1c",
+                        "background": "#faf9f8",
+                        "on-primary-fixed-variant": "#8d1324",
+                        "surface": "#faf9f8",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#efeeed",
+                        "primary-container": "#7a0019",
+                        "surface-dim": "#dadad9",
+                        "surface-container-highest": "#e3e2e1",
+                        "outline-variant": "#e0bfbe",
+                        "tertiary-container": "#3e3a2c",
+                        "primary-fixed-dim": "#ffb3b2",
+                        "surface-bright": "#faf9f8",
+                        "on-tertiary-fixed-variant": "#4b4738",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#584141",
+                        "surface-container-high": "#e9e8e7",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "secondary-container": "#fec324",
+                        "on-tertiary-fixed": "#1e1c10",
+                        "tertiary-fixed-dim": "#cdc6b3",
+                        "surface-tint": "#ae2e39",
+                        "primary": "#51000d",
+                        "on-secondary-container": "#6e5200",
+                        "primary-fixed": "#ffdad9",
+                        "on-surface": "#1a1c1c",
                         "on-primary-container": "#ff7b7f",
-                        "surface-container": "#efeeed"
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary": "#785a00",
+                        "outline": "#8c7070",
+                        "tertiary": "#282518",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e3e2e1",
+                        "secondary-fixed-dim": "#f8be1c",
+                        "tertiary-fixed": "#eae2cf",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#ffb3b2",
+                        "inverse-surface": "#2f3130",
+                        "secondary-fixed": "#ffdf9d",
+                        "on-tertiary-container": "#aaa492",
+                        "inverse-on-surface": "#f1f0ef",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#251a00",
+                        "surface-container-low": "#f4f3f2",
+                        "on-primary-fixed": "#410009",
+                        "error": "#ba1a1a"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.125rem",
@@ -81,7 +79,7 @@
                         "label": ["Inter"]
                     }
                 },
-            },
+            }
         }
     </script>
     <style>
@@ -89,331 +87,310 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
 
-        .glass-nav {
-            background: rgba(250, 249, 248, 0.8);
-            backdrop-filter: blur(12px);
-        }
-
-        .hero-gradient {
-            background: linear-gradient(135deg, #51000d 0%, #7a0019 100%);
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 
-<body class="bg-surface text-on-surface font-body selection:bg-secondary-container">
-    <!-- TopNavBar Component -->
-    <nav
-        class="w-full sticky top-0 z-50 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
-        <div class="hidden md:flex items-center space-x-8 font-headline tracking-tight">
-            <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors"
-                href="index.html">Home</a>
-            <a class="text-red-900 dark:text-yellow-500 font-bold border-b-2 border-yellow-500 pb-1"
-                href="events.html">Events</a>
-            <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors"
-                href="mentorship.html">Mentorship</a>
-            <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors"
-                href="partners.html">Partners</a>
-            <a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors"
-                href="about.html">About</a>
-        </div>
-        <button
-            class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-sm hover:bg-primary-container">
-            Join Club
-        </button>
-        </div>
-    </nav>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+    <!-- TopNavBar -->
+    <header
+        class="bg-[#faf9f8] dark:bg-slate-950 backdrop-blur-xl bg-opacity-80 shadow-[0_20px_40px_rgba(26,28,28,0.04)] docked full-width top-0 sticky z-50">
+        <nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-xl font-bold tracking-tighter text-[#51000d] dark:text-[#7a0019] font-headline">
+                UMD Sales Club
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-sm tracking-tight">
+                <a class="text-slate-400 dark:text-slate-500 font-medium hover:text-[#7a0019] transition-colors duration-300"
+                    href="#">Home</a>
+                <a class="text-slate-400 dark:text-slate-500 font-medium hover:text-[#7a0019] transition-colors duration-300"
+                    href="#">About Us</a>
+                <a class="text-[#51000d] dark:text-[#7a0019] font-extrabold border-b-2 border-[#ffcc33] pb-1 hover:text-[#7a0019] transition-colors duration-300"
+                    href="#">Events</a>
+                <a class="text-slate-400 dark:text-slate-500 font-medium hover:text-[#7a0019] transition-colors duration-300"
+                    href="#">Partners</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm scale-95 active:transition-transform active:scale-90 transition-all hover:bg-primary-container">
+                Join Now
+            </button>
+        </nav>
+    </header>
     <main>
-        <!-- Hero Section: Engagement & Activity -->
-        <section class="relative overflow-hidden pt-20 pb-32">
-            <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 z-10">
-                    <span
-                        class="inline-block text-secondary font-headline font-extrabold tracking-widest text-xs uppercase mb-4">Master
-                        the Art of the Close</span>
-                    <h1
-                        class="text-6xl md:text-7xl font-headline font-extrabold text-primary leading-[1.1] tracking-tighter mb-6">
-                        Engagement &amp; Activity
-                    </h1>
-                    <p class="text-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
-                        Where academic theory meets high-stakes performance. Explore our curated calendar of networking
-                        nights, competitive symposiums, and professional workshops designed for the collegiate
-                        executive.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button
-                            class="flex items-center gap-2 bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-base transition-all hover:translate-y-[-2px] active:scale-95 shadow-lg">
-                            Join on Bulldog Connect
-                            <span class="material-symbols-outlined text-sm">north_east</span>
-                        </button>
-                        <button
-                            class="flex items-center gap-2 border-2 border-outline-variant text-primary px-8 py-4 rounded-full font-headline font-bold text-base transition-all hover:bg-surface-container-low">
-                            View Full Calendar
-                        </button>
+        <!-- Sales Summit Section (Major Event) -->
+        <section class="relative min-h-[716px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover grayscale-[0.2] brightness-50"
+                    data-alt="wide shot of a prestigious corporate symposium hall with warm lighting and professional attendees in sharp business attire"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmSmWjQ4f7H1IBWJllVNqoXoeRiqkHQHyoZ2fNGU6Ox1j4Sn2VKnSZ5keHSRebTTv8px1Cperp7xcKld3bV0hKsZu1dwJOpC9MXN0glsHs3dmzzOPn4Ayz8egJw6sX0Y9EKudsS_9cebzRDmkxVBTaxa1xjOo1rbGefsIpCxUhDFlguIU1h-nBkbPgHjgS_4wU4W6WtxnQzsvqDhAawTcAUuVxq5LgyrlyVaujG5SWcV3guN7oBljUqYQJgKq9JWYIVTkphLJwTUU" />
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/60 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+                <h1
+                    class="font-headline text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
+                    Annual LSBE <br /><span class="text-secondary-fixed-dim">Sales Summit</span></h1>
+                <p class="text-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                    Our flagship professional development event. A high-stakes convergence of industry leaders, elite
+                    recruiters, and the next generation of sales excellence.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-stretch">
+                    <!-- Date Card Styled as Rectangle -->
+                    <div
+                        class="bg-[#FFCC33] flex flex-col justify-center items-center px-8 py-5 rounded-xl w-full md:w-[260px] h-[96px] text-center">
+                        <p class="text-[#51000d] font-headline text-2xl font-extrabold">Oct 12</p>
+                        <p class="text-[#51000d]/80 text-[10px] font-label uppercase tracking-[0.2em] mt-1">Most Recent
+                            Summit</p>
                     </div>
+                    <!-- Button Styled as Rectangle -->
+                    <a class="bg-primary hover:bg-primary-container text-white px-8 py-5 rounded-xl font-bold text-lg transition-all hover:-translate-y-1 flex items-center justify-center gap-3 w-full md:w-[260px] h-[96px] border border-secondary-fixed/30"
+                        href="#">
+                        <span class="text-secondary-fixed">Visit Summit Portal</span>
+                        <span class="material-symbols-outlined text-secondary-fixed text-xl">north_east</span>
+                    </a>
                 </div>
-                <div class="lg:col-span-5 relative">
+                <div class="mt-12 flex flex-col items-center justify-center">
                     <div
-                        class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative transition-transform duration-500">
-                        <img class="w-full h-full object-cover"
-                            data-alt="Modern business professionals in sharp attire engaged in high-energy networking event at a university corporate hall with warm sunset lighting"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9GEV5cJJ3S2mp3EC5MseKYlsT2isUeLeHdp4GaHc1IQyXipyRLmNdefStXntNvzeCOhtIO4EPV4ftudcbLJucbDawwl8mrF_cXX5Uv2XS2EPlmoGch4gbdzqnUnAsqB6YDtZw8Hi8S66GSJHeDn39Ta_avhjUbCjZtZ05SvRJbYN9lPXeC8e6hy6W3i9sI30TRBQMzkN-poX5Q0SraStG-SzTs165uyIXaBbwtKyatlw2dTfFPcdFhx_WMnrSMvGb2aKcIpup2fk" />
-                        <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
-                    </div>
-                    <!-- Decorative Element -->
-                    <div
-                        class="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary-container rounded-xl -z-10 opacity-20">
+                        class="rounded-full border-2 border-secondary-fixed/50 bg-primary/20 backdrop-blur-sm flex items-center justify-center overflow-hidden w-32 h-32">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Featured Events Grid (Asymmetric Bento Style) -->
+        <!-- Future Events & Flyer Gallery Section -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="border-2 border-primary/20 rounded-2xl p-8 md:p-12 mb-12">
+                    <div class="mb-12">
+                        <span
+                            class="text-primary font-label text-xs font-bold tracking-[0.2em] uppercase mb-4 block text-sm">What's
+                            Next</span>
+                        <h2 class="font-headline text-4xl font-extrabold text-on-surface">Future Events</h2>
+                    </div>
+                    <!-- Flyer Gallery -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div
+                            class="aspect-[1/1.4] bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow group">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Modern event flyer for Weekly Strategy Meetings with bold typography and club colors"
+                                onerror="this.src='https://placehold.co/400x560?text=Weekly+Strategy+Meetings'"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuClI7pZ-e9Y8u0Nn7z9r6u5m7y8t1x9p4v3c2b1n0m9l8k7j6h5g4f3d2s1" />
+                        </div>
+                        <div
+                            class="aspect-[1/1.4] bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow group">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Elegant flyer for Industry Friday Coffee featuring coffee cup icon and corporate sponsor logos"
+                                onerror="this.src='https://placehold.co/400x560?text=Industry+Friday+Coffee'"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuClI7pZ-e9Y8u0Nn7z9r6u5m7y8t1x9p4v3c2b1n0m9l8k7j6h5g4f3d2s2" />
+                        </div>
+                        <div
+                            class="aspect-[1/1.4] bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow group">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Dynamic flyer for Mock Competition Night with graphics of people presenting"
+                                onerror="this.src='https://placehold.co/400x560?text=Mock+Comp+Night'"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuClI7pZ-e9Y8u0Nn7z9r6u5m7y8t1x9p4v3c2b1n0m9l8k7j6h5g4f3d2s3" />
+                        </div>
+                        <div
+                            class="aspect-[1/1.4] bg-surface-container-low rounded-xl overflow-hidden border border-outline-variant/30 hover:shadow-lg transition-shadow group">
+                            <div
+                                class="w-full h-full flex flex-col items-center justify-center bg-surface-container-high/50 p-8 text-center">
+                                <span class="material-symbols-outlined text-primary/30 text-5xl mb-4">add_circle</span>
+                                <p class="font-headline font-bold text-on-surface-variant">Stay Tuned</p>
+                                <p class="text-xs text-on-surface-variant/60 mt-2">More events being added for Spring
+                                    2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Calendar Integration Module -->
+                <div class="mb-12">
+                    <span
+                        class="text-primary font-label text-xs font-bold tracking-[0.2em] uppercase mb-4 block text-sm">Official
+                        Schedule</span>
+                    <h2 class="font-headline text-4xl font-extrabold text-on-surface mb-8">Official Club Calendar</h2>
+                    <div class="rounded-2xl p-6 md:p-10 shadow-sm bg-[#FFCC33]">
+                        <div class="flex justify-end items-center mb-6">
+                            <div class="flex gap-2">
+                                <button
+                                    class="p-2 bg-surface/50 rounded-lg hover:bg-surface transition-colors shadow-sm text-[#7A0019]">
+                                    <span class="material-symbols-outlined">chevron_left</span>
+                                </button>
+                                <button
+                                    class="p-2 bg-surface/50 rounded-lg hover:bg-surface transition-colors shadow-sm text-[#7A0019]">
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            class="min-h-[400px] bg-white/40 backdrop-blur-sm rounded-xl border border-[#7A0019]/10 overflow-hidden relative flex items-center justify-center group">
+                            <div class="absolute inset-0 opacity-[0.05]"
+                                style="background-image: radial-gradient(#7A0019 1px, transparent 1px); background-size: 20px 20px;">
+                            </div>
+                            <div class="text-center p-12 relative z-10">
+                                <span class="material-symbols-outlined text-[#7A0019]/40 text-6xl mb-4"
+                                    data-weight="fill">calendar_month</span>
+                                <p class="text-[#7A0019] font-headline font-bold text-xl">Google Calendar Integration
+                                    Module</p>
+                                <p class="text-sm text-[#7A0019]/70 mt-2 font-medium">Connecting to LSBE Live Feed...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Past Events Gallery Section -->
         <section class="py-24 bg-surface-container-low">
             <div class="max-w-7xl mx-auto px-8">
-                <div class="mb-16">
-                    <h2 class="text-4xl font-headline font-extrabold text-primary tracking-tight mb-2">Upcoming Featured
-                        Events</h2>
-                    <div class="h-1.5 w-24 bg-secondary"></div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-                    <!-- Featured Event 1: Sales Symposium -->
-                    <div
-                        class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest transition-all hover:-translate-y-1">
-                        <div class="grid grid-cols-1 md:grid-cols-2 h-full">
-                            <div class="p-10 flex flex-col justify-between">
-                                <div>
-                                    <div class="flex items-center gap-3 mb-6">
-                                        <span
-                                            class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 text-xs font-bold rounded-full uppercase tracking-wider">High
-                                            Stakes</span>
-                                        <span class="text-on-surface-variant text-sm font-medium">March 15, 2024</span>
-                                    </div>
-                                    <h3 class="text-3xl font-headline font-extrabold text-primary mb-4 leading-tight">
-                                        Sales Symposium</h3>
-                                    <p class="text-on-surface-variant leading-relaxed mb-8">
-                                        Our flagship competition where elite students pitch to top-tier corporate
-                                        recruiters. Showcase your closing skills and secure your next internship.
-                                    </p>
-                                </div>
-                                <button
-                                    class="w-fit flex items-center gap-2 text-primary font-bold hover:underline decoration-secondary decoration-2 underline-offset-4">
-                                    Register on Bulldog Connect
-                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                                </button>
-                            </div>
-                            <div class="relative min-h-[300px]">
-                                <img class="absolute inset-0 w-full h-full object-cover"
-                                    data-alt="A confident student delivering a persuasive sales presentation in a sleek modern auditorium with corporate judges listening attentively"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKTcQ6ztrj6uNHkliNOIEtYTXcmFMSTO0IT07M61H9VVXBAZktLQUdtqCLXPrnUDdcmjieHXMAj0jBHGxXcF6jPG9YQ4BsAffi3Z5NAI-SzHKUnQnEYDfZ_OGLtvezmcR4tbzYIm5cy_JCSUWdAMZTav7Mt90m0t3HfnnketG54ium7abFsKyC9kdYMjF6eKjFk-M3mZmxNF69hZc4bG5jORuX4yNYEHKlNAvISo2NV1eIzAFHInhEKTc3HpvwWsxnT_xzzKWyFxw" />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Featured Event 2: Networking Night -->
-                    <div
-                        class="md:col-span-4 bg-primary text-on-primary rounded-xl p-10 flex flex-col justify-between hero-gradient transition-all hover:-translate-y-1">
+                <div class="border-2 border-primary/20 rounded-2xl p-8 md:p-12">
+                    <div class="flex justify-between items-end mb-16">
                         <div>
-                            <div class="mb-6">
-                                <span class="material-symbols-outlined text-4xl text-secondary-fixed">diversity_3</span>
+                            <span
+                                class="text-primary font-label text-xs font-bold tracking-[0.2em] uppercase mb-4 block text-sm">Previous
+                                Activity</span>
+                            <h2 class="font-headline text-4xl font-extrabold text-on-surface">Past Events</h2>
+                        </div>
+                    </div>
+                    <!-- 3x2 Photo Gallery -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8">
+                        <!-- Item 1 -->
+                        <div class="group">
+                            <div class="aspect-video relative overflow-hidden rounded-xl mb-4">
+                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    data-alt="LinkedIn Workshop"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNgYSTH171Mr7y8QO-Gs_6yHEv4c4HRggiWKH_2uXLV4groqqIaFeFEbdFKnurzjkwUthVJ32VvcDlhiGbeG1GYsksfDo6dlzc9p9i16SCJqxmsb-6mjF15SKCvkNKRBabGeZc9803u07aUxlNFZUosNXEMTSOiDjhlc2t4Mf2YyH0wBL5PzwH80r2lLliTb77OVKxe0EufWrHlkxjNS6LvqiFm3Bbx7IKNsy1Piv6E_YA5OQo-LFP33k0oWDykA5xMXU9j-q_GtQ" />
                             </div>
-                            <h3 class="text-2xl font-headline font-extrabold mb-4">Networking Night</h3>
-                            <p class="text-on-primary/80 text-sm leading-relaxed mb-6">
-                                Connect with LSBE alumni and local business leaders in an informal yet professional
-                                setting. Dress code: Business Professional.
-                            </p>
+                            <h3 class="font-headline text-lg font-bold text-on-surface">LinkedIn Profile Workshop</h3>
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">November 2023</p>
                         </div>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-3 text-sm font-medium">
-                                <span class="material-symbols-outlined text-secondary-fixed">calendar_today</span>
-                                April 02, 2024 • 6:00 PM
+                        <!-- Item 2 -->
+                        <div class="group">
+                            <div class="aspect-video relative overflow-hidden rounded-xl mb-4">
+                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    data-alt="Corporate Networking"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa9d7S_kuvGrFSWdk3N96NuQPyojlNtLoIot1CKzGIPsWRMf3HlDTMjO7mts-cDDb0-hZVd25TxpkXNeMmh1QwjYVuXUPRV9kr6ui_qma_TuWCYNVggRWc6DPCBh2z0P-irVIrD3FKzqcxA8al7aCRfy8-Md5QqgUENbQdP8Bg99DYPodrrKc2gTptPEWQAMK7mTThYCjkGAkb92cfRs-RqcP30V_n9XtzuL-65Fe7uH-P6HciO7xIjVqc2BsYDwtGIt8WANKUKGg" />
                             </div>
-                            <button
-                                class="w-full py-3 rounded-full bg-secondary text-on-primary font-headline font-bold text-sm shadow-md active:scale-95 transition-all">
-                                Secure Your Spot
-                            </button>
+                            <h3 class="font-headline text-lg font-bold text-on-surface">Corporate Networking Night</h3>
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">October 2023</p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="group">
+                            <div class="aspect-video relative overflow-hidden rounded-xl mb-4">
+                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    data-alt="Fall Sales Symposium"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcY4IJvLkwhuatLfRzQZv-AIwAGxcGE0YB_DzQj8vfEAwo1MZ5QqxDRnZMNzZqJ5pZNekGdn_BaudQgkyt7tJjbaq3uidiQdIyCcTebQiXw5i2pBb0Po7icZkFN9ccPaUdI-QxIUuZV0Y2-mnxIiO_QjiZZ2qvYstNejRWtj2C8sdH9YmmBdNgc748n5F6tjOv3TKu-k_qnHOgJ8eO8cMa4-9bzkY5bD1CxgfqObp-DiEkn8JtHJwtCt0iyg7LCDsv3xOkDDrmvlI" />
+                            </div>
+                            <h3 class="font-headline text-lg font-bold text-on-surface">Fall Sales Symposium</h3>
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">September 2023</p>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="group">
+                            <div class="aspect-video relative overflow-hidden rounded-xl mb-4">
+                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    data-alt="Ethics in Sales Seminar"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuClI7pZ-e9Y8u0Nn7z9r6u5m7y8t1x9p4v3c2b1n0m9l8k7j6h5g4f3d2s4" />
+                            </div>
+                            <h3 class="font-headline text-lg font-bold text-on-surface">Ethics in Modern Sales Seminar
+                            </h3>
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">April 2023</p>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="group">
+                            <div class="aspect-video relative overflow-hidden rounded-xl mb-4">
+                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    data-alt="Gartner Information Session"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuClI7pZ-e9Y8u0Nn7z9r6u5m7y8t1x9p4v3c2b1n0m9l8k7j6h5g4f3d2s5" />
+                            </div>
+                            <h3 class="font-headline text-lg font-bold text-on-surface">Gartner Partner Information
+                                Session</h3>
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">March 2023</p>
+                        </div>
+                        <!-- Item 6 -->
+                        <div class="group">
+                            <div class="aspect-video relative overflow-hidden rounded-xl mb-4">
+                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    data-alt="Spring Kickoff"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuClI7pZ-e9Y8u0Nn7z9r6u5m7y8t1x9p4v3c2b1n0m9l8k7j6h5g4f3d2s6" />
+                            </div>
+                            <h3 class="font-headline text-lg font-bold text-on-surface">Spring Semester Kickoff</h3>
+                            <p class="text-primary font-bold text-xs uppercase tracking-widest mt-1">February 2023</p>
                         </div>
                     </div>
-                    <!-- Minor Event 3 -->
-                    <div
-                        class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 transition-all hover:bg-surface-container-high">
-                        <span class="text-xs font-bold text-secondary uppercase tracking-widest mb-4 block">Workshop
-                            Series</span>
-                        <h4 class="text-xl font-headline font-bold text-primary mb-3">LinkedIn Optimization</h4>
-                        <p class="text-sm text-on-surface-variant mb-6">Learn to leverage social selling and build a
-                            personal brand that attracts headhunters.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-xs font-medium text-on-surface-variant">April 10</span>
-                            <span class="material-symbols-outlined text-primary text-xl">keyboard_arrow_right</span>
+                </div>
+                <!-- Complete Event History Section -->
+                <div class="mt-24 bg-[#FFCC33] p-8 md:p-12 rounded-xl">
+                    <div class="flex items-center mb-10">
+                        <div class="inline-block border-2 border-[#7A0019]/40 rounded-xl px-6 py-3">
+                            <h3 class="font-headline text-2xl font-extrabold text-[#7A0019] uppercase tracking-tight">
+                                Complete Event History</h3>
                         </div>
                     </div>
-                    <!-- Minor Event 4 -->
-                    <div
-                        class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 transition-all hover:bg-surface-container-high">
-                        <span class="text-xs font-bold text-secondary uppercase tracking-widest mb-4 block">Guest
-                            Speaker</span>
-                        <h4 class="text-xl font-headline font-bold text-primary mb-3">The Psychology of Sales</h4>
-                        <p class="text-sm text-on-surface-variant mb-6">Deep dive into behavioral economics and
-                            persuasion with industry veteran Sarah Jenks.</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-xs font-medium text-on-surface-variant">April 22</span>
-                            <span class="material-symbols-outlined text-primary text-xl">keyboard_arrow_right</span>
-                        </div>
-                    </div>
-                    <!-- Minor Event 5 -->
-                    <div
-                        class="md:col-span-4 bg-secondary-fixed rounded-xl p-8 transition-all hover:-translate-y-1 flex flex-col justify-center items-center text-center">
-                        <span class="material-symbols-outlined text-on-secondary-fixed text-3xl mb-2">more_horiz</span>
-                        <h4 class="text-lg font-headline font-bold text-on-secondary-fixed mb-1">More Events</h4>
-                        <p class="text-sm text-on-secondary-fixed-variant mb-4 font-medium">Explore the full semester
-                            lineup</p>
-                        <button class="bg-primary text-on-primary px-6 py-2 rounded-full text-xs font-bold">View Full
-                            List</button>
+                    <div class="bg-white/40 backdrop-blur-sm rounded-xl border border-[#7A0019]/10 p-8">
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> LinkedIn Workshop
+                                (Nov 2023)</li>
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> Corporate Networking
+                                Night (Oct 2023)</li>
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> Fall Sales Symposium
+                                (Sept 2023)</li>
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> Ethics in Sales
+                                Seminar (Apr 2023)</li>
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> Gartner Info Session
+                                (Mar 2023)</li>
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> Spring Semester
+                                Kickoff (Feb 2023)</li>
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> Mock Pitch
+                                Tournament (Dec 2022)</li>
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> 3M Guest Speaker
+                                Series (Nov 2022)</li>
+                            <li class="flex items-center gap-3 text-[#7A0019] font-bold"><span
+                                    class="w-2 h-2 bg-[#7A0019] rounded-full flex-shrink-0"></span> Fall 2022 Interest
+                                Meeting (Sept 2022)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Calendar Widget Section -->
-        <section class="py-24">
-            <div class="max-w-7xl mx-auto px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
-                    <div class="lg:col-span-1">
-                        <h2 class="text-3xl font-headline font-extrabold text-primary mb-6 tracking-tight">The Sales
-                            Pipeline</h2>
-                        <p class="text-on-surface-variant leading-relaxed mb-8">
-                            Stay synchronized with the LSBE Sales Club's dynamic schedule. From chapter meetings to
-                            regional competitions, never miss a chance to close the deal.
-                        </p>
-                        <div class="space-y-6">
-                            <div class="flex items-start gap-4">
-                                <div
-                                    class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
-                                    <span class="material-symbols-outlined text-primary">event_available</span>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-on-surface">Weekly Strategy Meetings</h5>
-                                    <p class="text-sm text-on-surface-variant">Every Tuesday at 5:00 PM in LSBE 120</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div
-                                    class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
-                                    <span class="material-symbols-outlined text-primary">notifications_active</span>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-on-surface">Alert Notifications</h5>
-                                    <p class="text-sm text-on-surface-variant">Get notified for last-minute recruiter
-                                        networking sessions.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-12 p-6 rounded-xl bg-surface-container border border-outline-variant/10">
-                            <p class="text-xs font-bold text-secondary uppercase mb-4 tracking-widest">Connect to your
-                                device</p>
-                            <div class="flex gap-4">
-                                <button
-                                    class="flex-1 bg-white p-3 rounded-lg shadow-sm flex items-center justify-center gap-2 text-xs font-bold hover:bg-stone-50 transition-colors">
-                                    <span class="material-symbols-outlined text-sm">add_circle</span> Google
-                                </button>
-                                <button
-                                    class="flex-1 bg-white p-3 rounded-lg shadow-sm flex items-center justify-center gap-2 text-xs font-bold hover:bg-stone-50 transition-colors">
-                                    <span class="material-symbols-outlined text-sm">add_circle</span> Apple
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-2">
-                        <!-- Placeholder for Google Calendar Widget -->
-                        <div
-                            class="bg-surface-container-high rounded-xl overflow-hidden aspect-[16/10] shadow-inner relative border border-outline-variant/20">
-                            <div class="absolute inset-0 flex flex-col items-center justify-center p-12 text-center">
-                                <div
-                                    class="w-20 h-20 rounded-full bg-surface-container-highest flex items-center justify-center mb-6">
-                                    <span
-                                        class="material-symbols-outlined text-4xl text-on-surface-variant opacity-40">calendar_month</span>
-                                </div>
-                                <h4 class="text-xl font-headline font-bold text-on-surface-variant mb-2">Google Calendar
-                                    Integration</h4>
-                                <p class="text-sm text-on-surface-variant max-w-sm mb-8">
-                                    This space is reserved for the live UMD Sales Club Google Calendar widget.
-                                </p>
-                                <button
-                                    class="bg-white border border-outline-variant/30 text-on-surface font-bold py-3 px-8 rounded-full text-sm hover:bg-surface-container-low transition-colors">
-                                    Authorize Access
-                                </button>
-                            </div>
-                            <!-- Faux Calendar Grid for Visual Structure -->
-                            <div class="absolute inset-0 opacity-10 pointer-events-none">
-                                <div class="grid grid-cols-7 h-full w-full">
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-r border-b border-on-surface"></div>
-                                    <div class="border-b border-on-surface"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Call to Action -->
+        <section class="py-20 bg-primary overflow-hidden relative">
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+                    <path d="M0 100 L100 0 L100 100 Z" fill="currentColor"></path>
+                </svg>
             </div>
-        </section>
-        <!-- Final CTA -->
-        <section class="max-w-7xl mx-auto px-8 mb-24">
-            <div
-                class="bg-primary-container rounded-xl p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 hero-gradient">
-                <div class="z-10 text-center md:text-left">
-                    <h2 class="text-4xl font-headline font-extrabold text-white mb-4">Ready to level up?</h2>
-                    <p class="text-white/80 text-lg max-w-lg">Track your attendance and professional development points
-                        exclusively on Bulldog Connect.</p>
-                </div>
-                <div class="z-10">
-                    <button
-                        class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-headline font-extrabold text-lg shadow-xl hover:scale-105 active:scale-95 transition-transform">
-                        Join on Bulldog Connect
-                    </button>
-                </div>
-                <!-- Abstract Design Detail -->
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+            <div class="max-w-4xl mx-auto px-8 text-center relative z-10">
+                <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-white mb-8">Ready to start your sales
+                    journey?</h2>
+                <p class="text-primary-fixed mb-10 text-lg opacity-80">Join a community dedicated to closing deals and
+                    opening doors. Meetings every Friday.</p>
+                <button
+                    class="bg-secondary-container text-on-secondary-container px-12 py-4 rounded-xl font-black text-lg shadow-xl hover:bg-secondary-fixed transition-all">Get
+                    Involved Today</button>
             </div>
         </section>
     </main>
-    <!-- Footer Component -->
-    <footer class="w-full mt-20 bg-stone-100 dark:bg-stone-950">
-        <div
-            class="flex flex-col md:flex-row justify-between items-center px-12 py-10 max-w-7xl mx-auto font-['Inter'] text-sm">
-            <div class="mb-6 md:mb-0">
-                <span class="font-['Plus_Jakarta_Sans'] font-bold text-red-950 dark:text-red-600">UMD SALES CLUB</span>
-                <p class="text-stone-500 mt-2">© 2024 UMD Sales Club. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="bg-[#efeeed] dark:bg-slate-900 full-width py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 w-full max-w-7xl mx-auto">
+            <div class="text-lg font-black text-[#51000d] font-headline mb-6 md:mb-0">
+                UMD Sales Club
             </div>
-            <div class="flex flex-wrap justify-center gap-8">
-                <a class="text-stone-500 hover:text-red-900 transition-colors hover:underline decoration-yellow-500 decoration-2 underline-offset-4"
-                    href="#">Privacy Policy</a>
-                <a class="text-stone-500 hover:text-red-900 transition-colors hover:underline decoration-yellow-500 decoration-2 underline-offset-4"
-                    href="#">Terms of Service</a>
-                <a class="text-stone-500 hover:text-red-900 transition-colors hover:underline decoration-yellow-500 decoration-2 underline-offset-4"
-                    href="#">Alumni</a>
-                <a class="text-stone-500 hover:text-red-900 transition-colors hover:underline decoration-yellow-500 decoration-2 underline-offset-4"
-                    href="#">Careers</a>
+            <div
+                class="flex flex-wrap justify-center gap-8 font-['Inter'] text-xs uppercase tracking-widest opacity-80 hover:opacity-100 transition-opacity">
+                <a class="text-slate-500 hover:underline decoration-[#ffcc33] decoration-2" href="#">Privacy Policy</a>
+                <a class="text-slate-500 hover:underline decoration-[#ffcc33] decoration-2" href="#">Contact Support</a>
+                <a class="text-slate-500 hover:underline decoration-[#ffcc33] decoration-2" href="#">University of
+                    Minnesota Duluth</a>
+            </div>
+            <div class="mt-8 md:mt-0 text-slate-500 font-['Inter'] text-xs uppercase tracking-widest">
+                © 2024 UMD Sales Club. All rights reserved.
             </div>
         </div>
     </footer>

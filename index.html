@@ -67,10 +67,10 @@
                         "surface-variant": "#e3e2e1"
                     },
                     "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
+                        "DEFAULT": "9999px",
+                        "lg": "9999px",
+                        "xl": "1rem",
+                        "full": "9999px"
                     },
                     "fontFamily": {
                         "headline": ["Plus Jakarta Sans"],
@@ -100,37 +100,33 @@
 </head>
 
 <body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen">
-    <!-- TopAppBar / Header (Retained from SCREEN_11) -->
+    <!-- TopAppBar / Header -->
     <header
-        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)] flex justify-between items-center px-6 lg:px-12 h-16">
-        <div class="flex items-center gap-8">
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)] h-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-full grid grid-cols-3 items-center">
             <div class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-red-900 dark:text-red-500 lg:hidden"
-                    data-icon="menu">menu</span>
-                <h1 class="text-xl font-extrabold tracking-tighter text-red-900 dark:text-red-500">UMD SALES</h1>
+                <span class="material-symbols-outlined text-primary lg:hidden" data-icon="menu">menu</span>
+                <h1 class="text-xl font-extrabold tracking-tighter text-primary">UMD Sales Club</h1>
             </div>
-            <nav class="hidden lg:flex items-center gap-8">
-                <a class="text-sm font-semibold text-primary hover:text-red-700 transition-colors" href="#">Home</a>
-                <a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
-                    href="#">Who We Are</a>
-                <a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+            <nav class="hidden lg:flex items-center justify-center gap-8">
+                <a class="text-sm font-bold text-primary border-b-2 border-secondary-container pb-1" href="#">Home</a>
+                <a class="text-sm font-semibold text-on-surface-variant/60 hover:text-primary transition-colors"
+                    href="#">About Us</a>
+                <a class="text-sm font-semibold text-on-surface-variant/60 hover:text-primary transition-colors"
                     href="#">Events</a>
-                <a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+                <a class="text-sm font-semibold text-on-surface-variant/60 hover:text-primary transition-colors"
                     href="#">Partners</a>
-                <a class="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
-                    href="#">About</a>
             </nav>
-        </div>
-        <div class="flex items-center gap-4">
-            <button
-                class="hidden lg:block bg-primary text-white text-xs font-bold px-5 py-2 rounded-full hover:bg-red-800 transition-all">Join
-                Club</button>
-            <span class="material-symbols-outlined text-red-900 dark:text-red-500"
-                data-icon="account_circle">account_circle</span>
+            <div class="flex items-center justify-end gap-4">
+                <button
+                    class="hidden lg:block bg-primary text-white text-xs font-bold px-5 py-2 rounded-full hover:bg-red-800 transition-all">Join
+                    Club</button>
+                <span class="material-symbols-outlined text-primary" data-icon="account_circle">account_circle</span>
+            </div>
         </div>
     </header>
     <main class="pt-16">
-        <!-- Hero Section (Retained from SCREEN_11) -->
+        <!-- Hero Section -->
         <section class="relative min-h-[85vh] flex flex-col justify-center px-6 lg:px-24 overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img alt="UMD Campus Architecture" class="w-full h-full object-cover"
@@ -141,7 +137,7 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent lg:hidden">
                 </div>
             </div>
-            <div class="relative z-10 max-w-4xl space-y-8">
+            <div class="relative z-10 max-w-5xl space-y-8">
                 <div class="space-y-4">
                     <p class="text-secondary-fixed font-bold tracking-[0.3em] text-xs lg:text-sm uppercase">Official
                         Student Organization</p>
@@ -151,19 +147,37 @@
                         University of Minnesota Duluth Sales Club bridges the gap between academic theory and real-world
                         corporate success through elite training and industry connections.</p>
                 </div>
-                <div class="flex flex-col sm:flex-row gap-4">
+                <!-- CTA Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     <button
-                        class="bg-secondary-container text-on-secondary-container font-bold py-4 px-10 rounded-full text-center shadow-2xl hover:scale-105 active:scale-95 transition-all text-lg">
-                        Join on Bulldog Connect
+                        class="bg-secondary-container text-on-secondary-container font-bold py-4 px-10 rounded-full text-center shadow-2xl hover:scale-105 active:scale-95 transition-all text-lg h-16 flex items-center justify-center">
+                        Bulldog Connect
                     </button>
-                    <button
-                        class="bg-white/10 backdrop-blur-md text-white border border-white/20 font-semibold py-4 px-10 rounded-full text-center hover:bg-white/20 active:scale-95 transition-all text-lg">
-                        Explore Programs
-                    </button>
+                    <a class="bg-secondary-container text-on-secondary-container font-bold py-4 px-10 rounded-full text-center hover:scale-105 active:scale-95 transition-all text-lg h-16 flex items-center justify-center gap-2"
+                        href="https://lsbe.d.umn.edu/sales" target="_blank">
+                        <span class="material-symbols-outlined text-xl" data-icon="school">school</span>
+                        <span>LSBE Sales Program</span>
+                    </a>
+                    <a class="bg-secondary-container/90 text-on-secondary-container font-bold py-4 px-10 rounded-full text-center hover:scale-105 active:scale-95 transition-all text-lg h-16 flex items-center justify-center gap-2"
+                        href="https://www.linkedin.com/company/university-of-minnesota-duluth-professional-sales/"
+                        target="_blank">
+                        <span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="bg-secondary-container/90 text-on-secondary-container font-bold py-4 px-10 rounded-full text-center hover:scale-105 active:scale-95 transition-all text-lg h-16 flex items-center justify-center gap-2"
+                        href="https://www.instagram.com/umdsalesclub/" target="_blank">
+                        <span class="material-symbols-outlined text-xl" data-icon="photo_camera">photo_camera</span>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="bg-secondary-container/90 text-on-secondary-container font-bold py-4 px-10 rounded-full text-center hover:scale-105 active:scale-95 transition-all text-lg h-16 flex items-center justify-center gap-2"
+                        href="https://lsbesalessummit.com/" target="_blank">
+                        <span class="material-symbols-outlined text-xl" data-icon="event_upcoming">event_upcoming</span>
+                        <span>Sales Summit</span>
+                    </a>
                 </div>
             </div>
         </section>
-        <!-- Mentorship & Events (Retained from SCREEN_11) -->
+        <!-- Mentorship & Events -->
         <div class="lg:grid lg:grid-cols-2">
             <!-- Mentorship Program -->
             <section class="py-24 px-6 lg:px-24 bg-surface-container-low flex flex-col justify-center">
@@ -189,7 +203,7 @@
                     </div>
                 </div>
             </section>
-            <!-- Upcoming Events -->
+            <!-- Upcoming Events Timeline -->
             <section
                 class="py-24 px-6 lg:px-24 bg-surface flex flex-col justify-center border-l border-surface-variant/30">
                 <div class="max-w-xl">
@@ -212,6 +226,8 @@
                                     Fall Sales Symposium</h4>
                                 <p class="text-sm text-on-surface-variant mt-1 italic">Labovitz School of Business &amp;
                                     Economics</p>
+                                <a class="inline-block mt-3 text-xs font-bold text-primary uppercase tracking-widest border-b border-primary/20 hover:border-primary transition-all"
+                                    href="#">Link to event page →</a>
                             </div>
                         </div>
                         <!-- Event Item 2 -->
@@ -227,6 +243,8 @@
                                     class="font-bold text-xl text-on-surface group-hover:text-primary transition-colors">
                                     Corporate Networking Night</h4>
                                 <p class="text-sm text-on-surface-variant mt-1 italic">UMD Ballroom B</p>
+                                <a class="inline-block mt-3 text-xs font-bold text-primary uppercase tracking-widest border-b border-primary/20 hover:border-primary transition-all"
+                                    href="#">Link to event page →</a>
                             </div>
                         </div>
                         <!-- Event Item 3 -->
@@ -241,15 +259,16 @@
                                 <h4
                                     class="font-bold text-xl text-on-surface group-hover:text-primary transition-colors">
                                     Sales Summit 2024</h4>
-                                <a class="text-sm text-primary font-bold mt-2 inline-block border-b-2 border-primary/20 hover:border-primary transition-all"
-                                    href="#">Link to Sales Summit →</a>
+                                <p class="text-sm text-on-surface-variant mt-1 italic">Virtual / On-Campus Hybrid</p>
+                                <a class="inline-block mt-3 text-xs font-bold text-primary uppercase tracking-widest border-b border-primary/20 hover:border-primary transition-all"
+                                    href="#">Link to event page →</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-        <!-- The Executive Vanguard (Modern Editorial Layout from SCREEN_9) -->
+        <!-- The Executive Vanguard -->
         <section class="bg-surface-container-low py-32">
             <div class="max-w-7xl mx-auto px-8">
                 <div class="mb-20 text-center">
@@ -258,10 +277,10 @@
                     <h2 class="text-4xl md:text-5xl font-black tracking-tight text-primary">The Executive Vanguard</h2>
                 </div>
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-                    <!-- Board Member -->
+                    <!-- Board Member 1 -->
                     <div class="group">
                         <div
-                            class="aspect-[3/4] rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            class="aspect-[3/4] rounded-xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
                             <img alt="Alex Rivera"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEKQeyQr8jGqeu4hZ1ZkgAp3kenZMqlsjHboQskOBhdK2StSoF1W_ZxvtNyAdAt6zQa3O3z9dgPXPtJiAcr9U6cxNm9ZattYdYEcdQiVOfHqsIviDb6k72gp8ANU1EzlZyCH7M5NTHOjmHUzabmRsufsD0vuxLtDPG1XTzsM0BdKk0J5epE1mGdQK-dbX-V3_uwk8u3_Kz-HWA1s97BG8e3sRrt_v5YX7c1xUI2GWyyreN7hRl9s3I6talYJ44oBGM0u09X7-52F8" />
@@ -271,9 +290,10 @@
                         <p class="text-on-surface-variant text-sm leading-relaxed">Tech Sales Enthusiast &amp; Strategic
                             Partnerships Lead.</p>
                     </div>
+                    <!-- Board Member 2 -->
                     <div class="group">
                         <div
-                            class="aspect-[3/4] rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            class="aspect-[3/4] rounded-xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
                             <img alt="Maya Chen"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeDKsoqxDX0KjtZAtU6GuAGbmBpKyBD9ySAl55RBFJrLcUbegtAaTKG8_rMBh61lBK_oYN5_WeQzTYBx7oViVR9DULrhZcnnt8Xfvd5rCHM6xKY2YMGDyjNaitqFUhVUIjaGhJY5ACCQqUJsH0AGqmsF_NXFDQZx9t186gfMPjzTDzweUBaouNxA3akV2mb6oehBTmnToQWhCydea2fgF8fKoI1AfwISKvTV0phn5wKGdLgqvsbYvmnMcyEWmo4d4cDo3J8JV_0oM" />
@@ -283,9 +303,10 @@
                         <p class="text-on-surface-variant text-sm leading-relaxed">SaaS Specialist &amp; Digital
                             Strategy Architect.</p>
                     </div>
+                    <!-- Board Member 3 -->
                     <div class="group">
                         <div
-                            class="aspect-[3/4] rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            class="aspect-[3/4] rounded-xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
                             <img alt="Marcus Thorne"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9ZLeWR43pYxjUdMg5bwx9ZTGiKHdl7YK9ATD6FgNk1D3EDUttdU_XmaRICgu-Vx_0lV4kKlwKgUbWYCtjYwgiVv7ERj8CcVMl2VBndAlowS5xueKlhSh4V5ZbESrM1-4p1aBea2_LReb-wLYCffOrZ-3HOp-D5Gq3Ip9wTAoPtk0Np2q-sjX5QMIl18GeeNsDyEPc6Fo_XPuVUxTbYqC7kC8vf_cbrw-jZ8lVQavsWG4QSrjGZvDFzOdooyMxNEt2QJ_QzULu4bM" />
@@ -295,9 +316,10 @@
                         <p class="text-on-surface-variant text-sm leading-relaxed">Negotiation Coach &amp; Pipeline
                             Management Expert.</p>
                     </div>
+                    <!-- Board Member 4 -->
                     <div class="group">
                         <div
-                            class="aspect-[3/4] rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            class="aspect-[3/4] rounded-xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
                             <img alt="Sarah Jenkins"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvsQeeaYWBel33H46bcMu43aYNsFk13BLgJSvtrkLo0SeSjLQR3Rkdy1wtX2hkpJKyLKGWp_DiCq4-wTjtQt-YuMBq8C4k-pXyDD49mXAE3MP52avo1oG7EUkrDMn_n_8IW4Y-XvmS7aWDaC-ukN9OMuOkinnjgoQdWGSZYO-BEqAMhluHPISpStMaLfX-DkSUF37g3nNC6Ce943d5sQdrc3bjQYD49GDTELQLSqZAKALR-Ep-AbGOiUfuH9uT2G2Fn0eYzzNn0Tc" />
@@ -307,28 +329,52 @@
                         <p class="text-on-surface-variant text-sm leading-relaxed">Content Strategist &amp; Personal
                             Brand Consultant.</p>
                     </div>
+                    <!-- Board Member 5 -->
+                    <div class="group">
+                        <div
+                            class="aspect-[3/4] rounded-xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            <img alt="James Wilson"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbYrWt1qy4FEiF7nIGVNpN_ZnbJ_OuZR8kexfkkBPCpNb0FtUgcbDKFWXEX33yWae2-pn7jHi4D88gFcS7VFHatuiAo5UrjxH0bVVsTAhDSPDcJnVLjfNxoDmbPx9OQtUVvL9aEo8RRO3seauuCRlDutAe8rh2hfyv9KeWxoE4WbA1JV_dCWXLvrw6GTTUKaEa8leDfh01wI8c0ppOrtL2rojf26ltG2iD0WR-YvK3cGl-og2Bd86L000jRVxjq4qPwxaYNlElTb6P" />
+                        </div>
+                        <h4 class="text-xl font-bold text-on-surface">James Wilson</h4>
+                        <p class="text-secondary font-medium text-sm tracking-wide mb-2 uppercase">VP of Finance</p>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Financial Analyst &amp; Budget
+                            Strategy Specialist.</p>
+                    </div>
+                    <!-- Board Member 6 -->
+                    <div class="group">
+                        <div
+                            class="aspect-[3/4] rounded-xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            <img alt="Elena Rodriguez"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuChekg4X_AY8ZAT-orCyQp1Hx0yscrmuBnsR7KYyDrW5Xq9FzTUUL9cFDjkUXMpXPsP_LBHFRhyWzRHnjcBU8ju-UQrJTYESnecEEcr2WC-8Wmt7CWGePywCfeIg33DJSVQnUjxIpuNtUG9iMVdaS7C_DsKOu_grhk9wP5Vm49cPEGy66xpEo36kFWeTOrkgpm2gnkFQpOpexDHST_xh_UIMfe286oZQUNx6YhkyGfAm3FKUtUY6Pf_xKYEapz9jtcZ7SzWgiQyblkK" />
+                        </div>
+                        <h4 class="text-xl font-bold text-on-surface">Elena Rodriguez</h4>
+                        <p class="text-secondary font-medium text-sm tracking-wide mb-2 uppercase">Corporate Liaison</p>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Partnership Manager &amp; Industry
+                            Outreach Coordinator.</p>
+                    </div>
+                    <!-- Board Member 7 -->
+                    <div class="group">
+                        <div
+                            class="aspect-[3/4] rounded-xl overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500 bg-surface-container-high shadow-lg">
+                            <img alt="David Kim"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYz_25DfYbAlc59QT0zLOqh-SkE-ntAjCkWKx5nMdm6rfnQTtGYSeryaHktzzWEuvH-fAVcnfwiWK3xStqlXyy_7rGtE87OvzEQhRN2pAeATlzlvdkkWzPHjpUko6MvKf0cLV1qCUFD1PG6SOvi3TdKqMcbCSlLAHjUTIppd__-RdKlgovFDAg5HpMLAf_pCYuNCY_8K0Ews4UkwH2zsL5B9guLy_ZRI7Dlm2tJvI_vsZQd0lZTxCrVgVFCSnMlmGQZDbRgiWSXxZG" />
+                        </div>
+                        <h4 class="text-xl font-bold text-on-surface">David Kim</h4>
+                        <p class="text-secondary font-medium text-sm tracking-wide mb-2 uppercase">Director of
+                            Recruitment</p>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Talent Acquisition Lead &amp; Student
+                            Engagement Specialist.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Empowered by Industry Leaders (from SCREEN_9) -->
-        <section class="py-24 max-w-7xl mx-auto px-8">
-            <div
-                class="bg-white rounded-xl p-16 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.05)] text-center border border-surface-variant/30">
-                <h3 class="text-on-surface-variant/50 font-bold tracking-[0.3em] uppercase text-xs mb-12">Empowered by
-                    Industry Leaders</h3>
-                <div
-                    class="flex flex-wrap justify-center items-center gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                    <div class="text-2xl font-black text-on-surface tracking-tighter">TECHFLOW</div>
-                    <div class="text-2xl font-black text-on-surface tracking-tighter">SALESFORCE</div>
-                    <div class="text-2xl font-black text-on-surface tracking-tighter">ORACLE</div>
-                    <div class="text-2xl font-black text-on-surface tracking-tighter">HUBSPOT</div>
-                    <div class="text-2xl font-black text-on-surface tracking-tighter">LINKEDIN</div>
-                </div>
-            </div>
-        </section>
-        <!-- Final CTA (Hybrid refinement) -->
+        <!-- Final CTA -->
         <section class="py-32 px-8 max-w-7xl mx-auto">
-            <div class="bg-primary relative rounded-2xl overflow-hidden p-12 md:p-24 text-center">
+            <div class="bg-primary relative rounded-3xl overflow-hidden p-12 md:p-24 text-center">
                 <div
                     class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
                 </div>
@@ -340,7 +386,7 @@
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
                         <button
                             class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl">
-                            Join on Bulldog Connect
+                            Bulldog Connect
                         </button>
                         <button
                             class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-xl hover:bg-white/20 transition-all">
@@ -351,7 +397,7 @@
             </div>
         </section>
     </main>
-    <!-- Modern Dark Footer (from SCREEN_9) -->
+    <!-- Modern Dark Footer -->
     <footer class="bg-primary text-secondary-fixed w-full">
         <div class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
             <div class="flex flex-col items-center md:items-start gap-4">
@@ -364,18 +410,24 @@
             <div class="flex flex-wrap justify-center gap-8 text-sm font-semibold tracking-tight">
                 <a class="text-white/80 hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
                 <a class="text-white/80 hover:text-secondary-fixed transition-colors" href="#">Contact Us</a>
-                <a class="text-white/80 hover:text-secondary-fixed transition-colors" href="#">LinkedIn</a>
-                <a class="text-white/80 hover:text-secondary-fixed transition-colors" href="#">Instagram</a>
+                <a class="text-white/80 hover:text-secondary-fixed transition-colors"
+                    href="https://www.linkedin.com/company/university-of-minnesota-duluth-professional-sales/">LinkedIn</a>
+                <a class="text-white/80 hover:text-secondary-fixed transition-colors"
+                    href="https://www.instagram.com/umdsalesclub/">Instagram</a>
             </div>
         </div>
     </footer>
-    <!-- BottomNavBar (Visible only on Mobile - Retained for consistency) -->
+    <!-- BottomNavBar (Visible only on Mobile) -->
     <nav
         class="fixed bottom-0 left-0 w-full z-50 flex lg:hidden justify-around items-center px-4 pb-4 pt-2 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md shadow-[0_-10px_30px_rgba(0,0,0,0.05)] rounded-t-2xl">
-        <a class="flex flex-col items-center justify-center bg-yellow-400/20 text-red-900 dark:text-yellow-500 rounded-xl px-4 py-2"
+        <a class="flex flex-col items-center justify-center bg-secondary-container/20 text-primary rounded-xl px-4 py-2"
             href="#">
             <span class="material-symbols-outlined" data-icon="home">home</span>
             <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
+            <span class="material-symbols-outlined" data-icon="info">info</span>
+            <span class="text-[10px] font-bold uppercase tracking-widest mt-1">About Us</span>
         </a>
         <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
             <span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
@@ -384,10 +436,6 @@
         <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
             <span class="material-symbols-outlined" data-icon="handshake">handshake</span>
             <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Partners</span>
-        </a>
-        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
-            <span class="material-symbols-outlined" data-icon="info">info</span>
-            <span class="text-[10px] font-bold uppercase tracking-widest mt-1">About</span>
         </a>
     </nav>
 </body>
