@@ -100,32 +100,31 @@
 </head>
 
 <body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen">
-    <!-- TopAppBar / Header -->
+    <!-- TopNavBar -->
     <header
-        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-[0_1px_2px_rgba(0,0,0,0.05)] h-16">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-full grid grid-cols-3 items-center">
-            <div class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary lg:hidden" data-icon="menu">menu</span>
-                <h1 class="text-xl font-extrabold tracking-tighter text-primary">UMD Sales Club</h1>
-            </div>
-            <nav class="hidden lg:flex items-center justify-center gap-8">
-                <a class="text-sm font-bold text-primary border-b-2 border-secondary-container pb-1" href="#">Home</a>
-                <a class="text-sm font-semibold text-on-surface-variant/60 hover:text-primary transition-colors"
-                    href="#">About Us</a>
-                <a class="text-sm font-semibold text-on-surface-variant/60 hover:text-primary transition-colors"
-                    href="#">Events</a>
-                <a class="text-sm font-semibold text-on-surface-variant/60 hover:text-primary transition-colors"
-                    href="#">Partners</a>
+        class="bg-white/70 dark:bg-zinc-950/70 backdrop-blur-xl shadow-sm shadow-zinc-200/50 dark:shadow-none fixed top-0 left-0 right-0 z-50 h-20 w-full">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
+            <div class="text-xl font-black tracking-tighter text-primary dark:text-red-500">UMD Sales Club</div>
+            <nav
+                class="hidden md:flex items-center space-x-8 font-['Inter'] tracking-tight font-medium text-sm flex-1 justify-center">
+                <a class="text-primary font-medium hover:opacity-80 transition-colors border-b-2 border-secondary-container"
+                    href="index.html">Home</a>
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors"
+                    href="about.html">About Us</a>
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors" href="events.html">Events</a>
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors" href="partners.html">Partners</a>
             </nav>
-            <div class="flex items-center justify-end gap-4">
+            <div class="flex items-center gap-4">
                 <button
-                    class="hidden lg:block bg-primary text-white text-xs font-bold px-5 py-2 rounded-full hover:bg-red-800 transition-all">Join
+                    class="bg-primary-container text-white px-6 py-2 rounded-full text-sm font-bold scale-95 active:scale-90 transition-transform hover:opacity-80">Join
                     Club</button>
-                <span class="material-symbols-outlined text-primary" data-icon="account_circle">account_circle</span>
+                <button class="md:hidden p-2 text-primary-container">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
             </div>
         </div>
     </header>
-    <main class="pt-16">
+    <main class="pt-20">
         <!-- Hero Section -->
         <section class="relative min-h-[85vh] flex flex-col justify-center px-6 lg:px-24 overflow-hidden">
             <div class="absolute inset-0 z-0">
@@ -149,10 +148,10 @@
                 </div>
                 <!-- CTA Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <button
+                    <a href="https://duluthumn.campusgroups.com/webapp/auth/login?redirect=https:%2F%2Fduluthumn.campusgroups.com%2Ffeeds%3Ftype%3Dclub%26type_id%3D35590%26tab%3Dabout&msg=" target="_blank"
                         class="bg-secondary-container text-on-secondary-container font-bold py-4 px-10 rounded-full text-center shadow-2xl hover:scale-105 active:scale-95 transition-all text-lg h-16 flex items-center justify-center">
                         Bulldog Connect
-                    </button>
+                    </a>
                     <a class="bg-secondary-container text-on-secondary-container font-bold py-4 px-10 rounded-full text-center hover:scale-105 active:scale-95 transition-all text-lg h-16 flex items-center justify-center gap-2"
                         href="https://lsbe.d.umn.edu/sales" target="_blank">
                         <span class="material-symbols-outlined text-xl" data-icon="school">school</span>
@@ -384,10 +383,10 @@
                     <p class="text-primary-fixed/80 text-lg mb-12">Join the UMD Sales Club today and gain exclusive
                         access to corporate recruiters, professional coaching, and elite competition pathways.</p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <button
-                            class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl">
+                        <a href="https://duluthumn.campusgroups.com/webapp/auth/login?redirect=https:%2F%2Fduluthumn.campusgroups.com%2Ffeeds%3Ftype%3Dclub%26type_id%3D35590%26tab%3Dabout&msg=" target="_blank"
+                            class="bg-secondary-container text-on-secondary-container px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-2xl text-center inline-block">
                             Bulldog Connect
-                        </button>
+                        </a>
                         <button
                             class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-xl hover:bg-white/20 transition-all">
                             Contact Us
@@ -421,19 +420,19 @@
     <nav
         class="fixed bottom-0 left-0 w-full z-50 flex lg:hidden justify-around items-center px-4 pb-4 pt-2 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md shadow-[0_-10px_30px_rgba(0,0,0,0.05)] rounded-t-2xl">
         <a class="flex flex-col items-center justify-center bg-secondary-container/20 text-primary rounded-xl px-4 py-2"
-            href="#">
+            href="index.html">
             <span class="material-symbols-outlined" data-icon="home">home</span>
             <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
         </a>
-        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
+        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="about.html">
             <span class="material-symbols-outlined" data-icon="info">info</span>
             <span class="text-[10px] font-bold uppercase tracking-widest mt-1">About Us</span>
         </a>
-        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
+        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="events.html">
             <span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
             <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Events</span>
         </a>
-        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="#">
+        <a class="flex flex-col items-center justify-center text-zinc-500 px-4 py-2" href="partners.html">
             <span class="material-symbols-outlined" data-icon="handshake">handshake</span>
             <span class="text-[10px] font-bold uppercase tracking-widest mt-1">Partners</span>
         </a>

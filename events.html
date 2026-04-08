@@ -96,28 +96,28 @@
 <body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
     <!-- TopNavBar -->
     <header
-        class="bg-[#faf9f8] dark:bg-slate-950 backdrop-blur-xl bg-opacity-80 shadow-[0_20px_40px_rgba(26,28,28,0.04)] docked full-width top-0 sticky z-50">
-        <nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
-            <div class="text-xl font-bold tracking-tighter text-[#51000d] dark:text-[#7a0019] font-headline">
-                UMD Sales Club
+        class="bg-white/70 dark:bg-zinc-950/70 backdrop-blur-xl shadow-sm shadow-zinc-200/50 dark:shadow-none fixed top-0 left-0 right-0 z-50 h-20 w-full">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
+            <div class="text-xl font-black tracking-tighter text-primary dark:text-red-500">UMD Sales Club</div>
+            <nav
+                class="hidden md:flex items-center space-x-8 font-['Inter'] tracking-tight font-medium text-sm flex-1 justify-center">
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors" href="about.html">About Us</a>
+                <a class="text-primary font-medium hover:opacity-80 transition-colors border-b-2 border-secondary-container"
+                    href="events.html">Events</a>
+                <a class="text-zinc-500 font-medium hover:text-primary transition-colors" href="partners.html">Partners</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-primary-container text-white px-6 py-2 rounded-full text-sm font-bold scale-95 active:scale-90 transition-transform hover:opacity-80">Join
+                    Club</button>
+                <button class="md:hidden p-2 text-primary-container">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
             </div>
-            <div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-sm tracking-tight">
-                <a class="text-slate-400 dark:text-slate-500 font-medium hover:text-[#7a0019] transition-colors duration-300"
-                    href="#">Home</a>
-                <a class="text-slate-400 dark:text-slate-500 font-medium hover:text-[#7a0019] transition-colors duration-300"
-                    href="#">About Us</a>
-                <a class="text-[#51000d] dark:text-[#7a0019] font-extrabold border-b-2 border-[#ffcc33] pb-1 hover:text-[#7a0019] transition-colors duration-300"
-                    href="#">Events</a>
-                <a class="text-slate-400 dark:text-slate-500 font-medium hover:text-[#7a0019] transition-colors duration-300"
-                    href="#">Partners</a>
-            </div>
-            <button
-                class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm scale-95 active:transition-transform active:scale-90 transition-all hover:bg-primary-container">
-                Join Now
-            </button>
-        </nav>
+        </div>
     </header>
-    <main>
+    <main class="pt-20">
         <!-- Sales Summit Section (Major Event) -->
         <section class="relative min-h-[716px] flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
